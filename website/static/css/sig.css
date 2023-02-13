@@ -1,0 +1,144 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: montserrat;
+	background: linear-gradient(-50deg, #9fceee, #e0b5f3, #f3dada);
+	
+	height: 100vh;
+	overflow: hidden;
+
+}
+.si{
+	color: red;
+
+}
+
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: white;
+	border-radius: 10px ;
+	border: 3px solid lime;
+	box-shadow: 0px 5px 10px 0px rgba(238, 130, 238 ),1px 3px 4px 0px rgba(255, 165, 0);
+
+	
+
+
+}
+.center:hover{
+	border: 3px solid red;
+	transition: 0.5s ease-in-out;
+}
+
+.center h1{
+	text-align: center;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid silver;
+}
+
+.center form{
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+form .txt{
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin: 30px 0;
+}
+
+.txt input{
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+.txt label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+
+	font-size: 16px;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.txt span::before{
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width:0%;
+	height: 2px;
+	background: #2691d9;
+	transition: .5s;
+}
+
+.txt input:focus ~ label,
+.txt input:valid ~ label{
+	top: -5px;
+	color: #2691d9;
+}
+
+.txt input:focus ~ span::before,
+.txt input:valid ~ span::before{
+	width: 100%;
+}
+
+input[type="submit"]{
+
+	width: 80%;
+	height: 40px;
+	border: 1px ;
+	border-radius: 8px;
+	background: linear-gradient(120deg,aquamarine,bisque,lightblue,blueviolet,aqua);
+	font: bold italic large serif ;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	transition: .9s;
+}
+
+input[type="submit"]:hover{
+	border-color: #2691d9;
+	transition: .9s;
+
+}
+
+.bout{
+	text-align: center;
+	color: red;
+	
+
+
+}
+
+.bb{
+	color: red;
+	font-size: 100%;
+
+}
+.last{
+	text-align: center;
+	margin: 30px 0;
+	text-align: center;
+	font-size: 16px;
+	color: #666666;
+}
+
+.last a:hover{
+	text-decoration: underline;
+	color: darkred;
+}
+
+
+	

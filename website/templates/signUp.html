@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{%  block  title %}sign_up{% endblock%}
+{% block content%}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static',filename='CSS/sig.css')}}"
+/>
+
+<div class="container mt-3">
+  <div class="row justify-content-center ">
+    <div class="col-m-6 align-self-center center">
+      <marquee behavior="alternate"class="si"><h1>Sign up</h1></marquee>
+
+      <form method="POST">
+        <div class="txt">
+          <input
+            type="text"
+            pattern="[A-Z]*"
+            title="The name must be capitalized"
+            required
+            autofocus
+            name=""
+          />
+          <span></span>
+          <label for="name">name<i class="fa-solid fa-user"></i></label>
+        </div>
+
+        <div class="txt">
+          <input
+            type="text"
+            pattern="[A-Z]{1}[a-z]*"
+            title="The first letter of the firtname must be capitalized"
+            name="firstName"
+            required
+          />
+          <span></span>
+          <label for="firtName">Firstname</label>
+        </div>
+
+        <div class="txt">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <span></span>
+          <label for="email">Email<i class="fa-solid fa-envelope"></i></label>
+        </div>
+
+        <div class="txt">
+          <input
+            type="Password"
+            name="password1"
+            placeholder="Enter your Password"
+          />
+          <span></span>
+          <label for="password1">Password<i class="fa-solid fa-key"></i></label>
+        </div>
+
+        <div class="txt">
+          <input
+            type="Password"
+            name="password2"
+            placeholder="Confirm password"
+          />
+          <span></span>
+          <label for="password2"  >
+
+            Confirm your Password<i class="fa-solid fa-key"></i
+          ></label>
+        </div>
+
+        <div class="bout">
+          <input class="bb" type="submit" value="Sign up" />
+        </div>
+
+        <div class="last">
+          Already have an acount?<a href="/login">Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

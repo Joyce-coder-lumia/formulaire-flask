@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{%  block  title %}login{% endblock%}
+
+{% block content %}
+
+<section>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/login.css')}}">
+    
+
+<div class="content">
+
+    
+    <div class="text">Login</div>
+
+    <form>
+        <div class="field">
+            <span  class="fa-solid fa-envelope"></span>
+            <input type="email" placeholder="Enter your mail" required>
+        </div>
+
+        <div class="field">
+            <span class="fa-solid fa-lock" ></span>
+            <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="field">
+            <span  class="fa-solid fa-lock" ></span>
+            <input type="password" placeholder="confirm your password" required>
+        </div><br>
+
+        <div class="Remember">
+            <label><input type="checkbox" name="">Remember me</label>
+        </div>
+
+        <div class="inputBack">
+            <input type="submit" value="sign in" name="">
+        </div>
+
+        <div class="foot">
+            <p>Don't have an account?<a href="/signUp">sign up</a></p>
+        </div>
+
+        <h3 >Login with social media</h3>
+
+        <div class="icon">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-brands fa-google"></i>
+        </div>
+    </form>
+
+</div>
+</section>
+
+
+
+
+{% endblock %}
